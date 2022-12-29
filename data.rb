@@ -1,3 +1,4 @@
+require 'pry'
 def data_one
   data     = [
     {
@@ -40,7 +41,7 @@ def data_one
       location: 'Rome',
       amount:   750
     },
-  ].map(&:with_indifferent_access)
+  ]
   response = [
     {
       "client":   'ABC',
@@ -112,7 +113,7 @@ def data_two
       month:    'Jun',
       amount:   130
     }
-  ].map(&:with_indifferent_access)
+  ]
   response = [
     {
       client:   'ABC',
@@ -200,7 +201,7 @@ def data_three
       month:    'Jun',
       amount:   130
     }
-  ].map(&:with_indifferent_access)
+  ]
   response = [
     {
       "client"   => "ABC",
